@@ -1,6 +1,6 @@
 <?php
 
-namespace TomekBundle\Tests\Controller;
+namespace BefaultBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
