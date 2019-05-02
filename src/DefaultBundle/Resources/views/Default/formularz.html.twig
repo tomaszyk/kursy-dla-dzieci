@@ -1,0 +1,30 @@
+{% extends 'DefaultBundle::base.html.twig' %}
+
+{% block body %}
+
+
+
+<div class = "row">
+    <div class = "col-md-3"></div>
+    <div class = "col-md-6">
+        <p style = "text-align: center;">FORMULARZ REJESTRACYJNY<br>KURSU "LEPIEJ SIĘ UCZĘ, SZYBKO CZYTAM"</p>
+<p></p>
+    </div>
+</div>
+<hr>
+<center>
+<div class = "row">
+    <div class = "col-md-3"></div>
+    <div class = "col-md-6">   
+        {{form(form, {'attr': {'novalidate': 'novalidate'}})}}
+    </div>
+</div>
+</center>
+
+
+			<p>Wysyłając powyższy formularz oświadczam, że zapoznałem/am się z<a href="{{path('default_regulamin')}}"> Regulaminem</a> i akceptuję go.</p>
+<p>Dane personalne i teleadresowe będą wykorzystywane tylko i wyłącznie do sporządzenia umowy udziału w kursie "Lepiej się uczę, szybko czytam" oraz przesyłania wszelkich aktualności dotyczących udziału w kursie.<br></p>
+							
+
+{% endblock %}
+{% block script %}{% endblock %}

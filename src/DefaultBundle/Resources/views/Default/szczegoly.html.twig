@@ -1,0 +1,52 @@
+{% extends 'DefaultBundle::base.html.twig' %}
+{% block body %}
+			
+
+
+			<h3>Start nowej grupy</h3>
+            
+            
+<center>
+	<h4>Grupa {{kurs.grupa}} klasa - Początek kursu: {{kurs.poczatekkursu}}</h4> 
+	<span class="glyphicon glyphicon-calendar"></span>
+	<p class = "bold">Dzień i godzina zajęć: {{kurs.dzienigodzina}}</p>
+
+</center>				
+		<p class = "bold center">Cena podstawowa: 229 zł/m-c</p>
+		<center class = "bold" ><span class="glyphicon glyphicon-bullhorn"></span></center>
+		
+			<h3 class = "red">PROMOCJA</h3>
+			
+		 <p class = "red center">Przy zapisie do {{data_promocji}}, cena promocyjna: {{polaczenie.cena}} zł/m-c </p>
+		 <p class = "center1">Opłata za cały kurs składa się z dziewięciu czynszów płatnych do 10-tego każdego miesiąca, za dany miesiąc. <br>W momencie zapisu należy dokonać opłaty rezerwacyjnej (50 zł) wliczonej na poczet pierwszego czynszu. </p>
+		 <center class = "bold"><span class="glyphicon glyphicon-map-marker"></span></center>
+		 <center><p><b>Miejsce zajęć: {{kurs.nazwa}}, {{kurs.adres}}</b></p></center>
+		 <center><iframe src="https://www.google.com/maps/embed?{{kurs.mapa}}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+		 
+
+
+
+<hr />
+<p class="center">Aby zarezerwować miejsce w grupie prosimy o wypełnienie formularza</p>
+<br>
+<p class = "center"> <a href="{{path('default_formularz', {'id': kurs.id, 'data': data_promocji})}}" class = "color">Zapisuję dziecko na kurs</a></p>
+<br>
+<p>Oraz <span class = "bold">dokonanie opłaty rezerwacyjnej (zaliczonej na poczet pierwszego czynszu) w wysokości 50 zł</span>.</p>
+<p><span class = "procent">Kurs trwa:</span> dwa semestry, 32 tygodnie (9 m-cy).</p>
+<p><span class = "procent">Grupy wiekowe:</span>&nbsp; 2-3 klasa oraz 4-6 klasa, maksymalnie 12 osób w grupie.</p>
+<p><span class = "procent">Spotkania:</span> raz w tygodniu.</p>
+<p><span class = "procent">Długośc spotkania:</span> 2 x 45min. (liczba kursantów do 8 osób) lub 2 x 60min. (liczba kursantów po wyżej 8 osób)</p>
+
+<h3>GWARANCJA SATYFAKCJI</h3>
+<center>
+	<img src="{{asset('image/gwarancja.png')}}" alt="" width="130" height="128">
+</center>	
+
+<br><br>
+	<p id = "gwarancja" class = "text-center"><i>Jeżeli uznasz, że po zakończonym kursie, efekty są niezadawalające, zwróć się do nas, a my oddamy Ci całą wpłaconą kwotę.</i>
+	<br><b>Nam płacisz za wynik!!!</b></p>
+		<br>		
+					
+	<p class = "center"> <a href="{{path('default_formularz', {'id': kurs.id, 'data': data_promocji})}}" class = "color">Zapisuję dziecko na kurs</a></p>
+	{% endblock %}
+{% block script %}{% endblock %}

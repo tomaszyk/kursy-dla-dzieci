@@ -1,0 +1,3 @@
+default:
+    resource: "@DefaultBundle/Resources/config/routing.yml"
+    prefix:   /

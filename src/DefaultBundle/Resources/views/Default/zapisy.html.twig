@@ -1,0 +1,21 @@
+{% extends 'DefaultBundle::base.html.twig' %}
+{% block body %}
+			
+
+
+			<h3>Start nowych grup</h3>
+            
+            {% for kurs in kursy %}
+            
+    <p id = "grupy" class="bold"><span class="glyphicon glyphicon-calendar"></span><br>Grupa {{kurs.grupa}} klasa - Początek kursu: {{kurs.poczatekkursu}}, godzina: {{kurs.dzienigodzina}} liczba wolnych miejsc: {{12 - kurs.liczbakursantow}}</p><center><a href = "{{path('default_szczegoly', { 'id': kurs.id })}}"  class = "color1">Szczegóły</a></center> 
+
+			
+			<br>
+
+            {% endfor %}
+
+
+
+	
+	{% endblock %}
+{% block script %}{% endblock %}

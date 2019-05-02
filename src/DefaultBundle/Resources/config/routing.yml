@@ -1,0 +1,47 @@
+default_homepage:
+    path:     /
+    defaults: { _controller: DefaultBundle:Default:index }
+
+default_dysleksja:
+    path:     /dysleksja
+    defaults: { _controller: DefaultBundle:Default:dysleksja }
+
+default_dowodySkutecznosci:
+    path:     /dowody-skutecznosci
+    defaults: { _controller: DefaultBundle:Default:dowodySkutecznosci }
+
+default_formularz:
+    path:     /formularz/{id}/{data}
+    defaults: { _controller: DefaultBundle:Default:formularz }
+
+default_kontakt:
+    path:     /kontakt
+    defaults: { _controller: DefaultBundle:Default:kontakt }
+
+default_regulamin:
+    path:     /regulamin
+    defaults: { _controller: DefaultBundle:Default:regulamin }
+
+default_programNauczania:
+    path:     /program-naucznaia
+    defaults: { _controller: DefaultBundle:Default:programNauczania }
+
+default_zapisy:
+    path:     /zapisy
+    defaults: { _controller: DefaultBundle:Default:zapisy }
+
+default_dziekujemy:
+    path:     /dziekujemy
+    defaults: { _controller: DefaultBundle:Default:dziekujemy }
+    
+default_wiadomosc:
+    path:     /wiadomosc/{imie}/{email}/{wiadomosc}
+    defaults: { _controller: DefaultBundle:Default:wiadomosc }
+    
+default_szczegoly:
+    path:     /szczegoly/{id}
+    defaults: { _controller: DefaultBundle:Default:szczegoly }
+
+default_place:
+    path:     /place/{data}
+    defaults: { _controller: DefaultBundle:Default:place }
